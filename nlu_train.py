@@ -146,7 +146,7 @@ def lstm_cell(num_units, keep_prob=0.95):
 
 
 if __name__=="__main__":
-       domain_value_list, intent_value_list, slots_key_list, slots_value_list=get_features("./json/1.json")
+       domain_value_list, intent_value_list, slots_key_list, slots_value_list=get_features("./train.json")
        domiain_dic={}
        num=0
        max_acc=0
@@ -167,7 +167,7 @@ if __name__=="__main__":
 
        slots_key_dic["pad"]=0
 
-       em_list_all,domain_list_id,slot_word_index=eming("./json/1.json",slots_key_dic)
+       em_list_all,domain_list_id,slot_word_index=eming("./train.json",slots_key_dic)
       # print("hello  world")
      #  print(em_list_all)
      #  print(slot_word_index)
