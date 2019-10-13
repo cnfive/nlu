@@ -9,7 +9,7 @@ import jieba.analyse
 import re
 import random
 
-json_file=open('train_o.json', 'a')
+json_file=open('train.json', 'a')
 
 def store(data):
 
